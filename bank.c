@@ -1,56 +1,25 @@
 #include <stdio.h>
-#include <string.h>
-
+#include "user.h"
 int main()
 {
 	char option;
-	double balance = 5000.00; 
+	double balance = 5000.00;
+	double lastTransferAmount = 0.0;
 
+	/* Greeting message */ 
+	printf("Welcome to Daemon banking app, Banking made easy. \n");
 
-	printf("Welcome to Daemon banking app, enjoy the experience\n");
+	/* Create account */
+	createAccount();
 
-	/* Creating an account */
-	char firstname[40], lastname[50];
+	char password[20];
+	int passwordCorrect = 0;
 
-	printf("Create an account \n");
-	printf("Enter your first and last names here: ");
-	scanf("%s %s", firstname, lastname);
+	printf("Enter your password: ");
+	scanf("%s", password);
 
-	char pass[20];
-	char val[20];
-	int value;
-	int i = 3;
-	int passwordCorrect = 0; //Flag var to track correct password validation.
+	passwordCorrect = validatePassword(password);
 
-	printf("Create a password: ");
-	scanf("%s", pass);
-
-	printf("Confirm password: ");
-	scanf("%s", val);
-
-	value = strcmp(pass, val);
-
-	if (value != 0 )
-		while (i >= 0)
-		{
-			printf("\n Your passwords dont match \n");
-			printf("Try again, Re-enter password: ");
-			scanf(" %s", val);
-
-			value = strcmp(pass, val);
-			if ( value == 0)
-			{
-				passwordCorrect = 1;
-				break;
-			}
-			if (i > 0)
-				printf("Passwords dont match.You have %d more attempts \n", i);
-			else
-				printf("Sorry, You can't create an account");
-					i--;
-		}
-	else
-		passwordCorrect = 1;
 
 	if (passwordCorrect)
 	{
@@ -72,17 +41,18 @@ int main()
 			{
 				case 'a':
 				    printf("Option a: Deposit\n");
-				    /* Add code to deposit money */
+				    deposit(&balance);
 				    break;
 
 				case 'b':
 				    printf("Option b: Transfer\n");
-				    /* Add code to deposit money */
+				    transfer(&balance, &lastTransferAmount);
 				    break;
 				    
 				case 'c':
 				    printf("Option c: Check balance\n");
 				    /* Add code to check balance */
+				    checkBalance(balance);
 				    break;
 
 				case 'd':
