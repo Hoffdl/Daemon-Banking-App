@@ -1,0 +1,40 @@
+Transaction Details:
+Transaction Type: Credit Alert 
+Account Name: N/A 
+Account Number: N/A 
+Bank: N/A 
+Amount: 1000.00 
+Previous Balance: 5000.00 
+Current Balance: 6000.00 
+Date: 2023-12-19 19:55:57 
+...................
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: d 
+Account Number: ald 
+Bank: fkd 
+Amount: 0.00 
+Previous Balance: 6000.00 
+Current Balance: 6000.00 
+Date: 2023-12-19 19:56:29 
+...................
+Transaction Details:
+Transaction Type: Debit Alert 
+Account Name: ike 
+Account Number: 122 
+Bank: znet 
+Amount: 2000.00 
+Previous Balance: 5000.00 
+Current Balance: 3000.00 
+Date: 2023-12-19 19:57:20 
+...................
+Transaction Details:
+Transaction Type: Credit Alert 
+Account Name: N/A 
+Account Number: N/A 
+Bank: N/A 
+Amount: 5000.00 
+Previous Balance: 5000.00 
+Current Balance: 10000.00 
+Date: 2023-12-19 19:58:03 
+...................

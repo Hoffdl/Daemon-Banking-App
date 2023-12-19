@@ -25,5 +25,5 @@ void transfer(double* balance, double* lastTransferAmount)
 	*lastTransferAmount = amount;
 
 	// Print reciept with transaction details
-	printReciept("Debit Alert", accountName, accountNumber, bank, amount, *balance + amount, balance);
+	printReceipt("Debit Alert", accountName, accountNumber, bank, amount, *balance + amount, *balance);
 }

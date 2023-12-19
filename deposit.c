@@ -10,10 +10,11 @@ void deposit(double* balance)
 
 	if (depositAmount <= 0)
 	{
-		printf("Invalid deposit amount. \n")
+		printf("Invalid deposit amount. \n");
 		return;
 	}
 
 	*balance += depositAmount;
-
-	printReciept("Credit Alert", "N/A", "N/A", "N/A", depositAmount, *balance - depositAmount, *balance);
+	
+	printReceipt("Credit Alert", "N/A", "N/A", "N/A", depositAmount, *balance - depositAmount, *balance);
+}
