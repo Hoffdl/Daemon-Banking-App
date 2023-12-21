@@ -25,7 +25,7 @@ int main()
 	if (passwordCorrect)
 	{
 		printf("Your password is correct, Welcome to Daemon Internet Banking \n");
-		printf("You have a fixed amount of 5,000. Ugrade your app to enjoy more benefits \n");
+		printf("You have a bouns amount of 5,000. Ugrade your app to enjoy more benefits \n");
 
 		while (1)
 		{
@@ -34,7 +34,6 @@ int main()
 			printf("b. Transfer\n");
 			printf("c. Check balance\n");
 			printf("d. Quit the program\n");
-
 			printf("Select an option: ");
 			scanf(" %c", &option);
 
