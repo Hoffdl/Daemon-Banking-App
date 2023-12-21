@@ -40,27 +40,27 @@ int main()
 			switch (option)
 			{
 				case 'a':
-				    printf("Option a: Deposit\n");
+				    printf("Option a: Deposit \n");
 				    deposit(&balance);
 				    break;
 
 				case 'b':
-				    printf("Option b: Transfer\n");
+				    printf("Option b: Transfer \n");
 				    transfer(&balance, &lastTransferAmount);
 				    break;
 				    
 				case 'c':
-				    printf("Option c: Check balance\n");
+				    printf("Option c: Check balance \n");
 				    /* Add code to check balance */
 				    checkBalance(balance);
 				    break;
 
 				case 'd':
-				    printf("Option d: Quit the program\n");
+				    printf("Option d: Quit the program \n");
 				    return 0;
 
 				default:
-				    printf("Invalid option. Please try again.\n");
+				    printf("Invalid option. Please try again. \n");
 			}
 		}
 	}
