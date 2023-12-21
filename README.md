@@ -1,13 +1,13 @@
-# DAEMON BANKING APP
+## DAEMON BANKING APP
 This is a simple banking app which was built and developed using c programming language. It allows users perform basic banking functionalities such as creating an account, depositing funds, transfering money, checking account balance and generating receipts for those transaction.
 
 ![alt text](https://github.com/Hoffdl/Daemon-Banking-App/blob/master/verifyimg.jpg)
 
-###Prerequisites
+### Prerequisites
 To compile and run Daemon bank, ensure you have the following:
 	* C compiler (e.g GCC) installed on your system.
 
-###Getting Started
+### Getting Started
 1. Clone the repository or download the source code:
 https://github.com/Hoffdl/Daemon-Banking-App.git
 
@@ -17,7 +17,7 @@ gcc * .c -o bank
 3. Run the executable:
 ./bank
 
-###Usage
+### Usage
 1. Upon running the program, you will be asked to create an account by entering your first and last names
 
 1. Enter your password. You'll be prompted to Re-enter your password. You have three attempts to enter the correct password and if not correct you'll be logged out of the program.
@@ -34,7 +34,7 @@ gcc * .c -o bank
 
 * d. Quit the program: Exiting the program.
 
-##Authors
+### Authors
 Ikegwuonu Henry 
 Github: https://github.com/Hoffdl
 
